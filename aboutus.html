@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: center;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #00008b;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<head>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">About Us</a></li>
+      </ul>
+</head>
+
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>We build this mobile application for help people to find the nearest hospital</p>
+  <p>It will display marker around the hospital </p>
+</div>
+
+<h2 style="text-align:center">Team Members</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="samad.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Abdul Samad Bin Ali</h2>
+        <p class="title">Founder & Programmer</p>
+        <p>I am the founder od this mobile application. My dream is to help people </p>
+        <p>AbdulSamad@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Elvisianah Petrus</h2>
+        <p class="title">Programmer & Art Director </p>
+        <p>Hopefully this application can help people to find the hospital</p>
+        <p>.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="donny.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Akmal Danial Bin Jasmadi</h2>
+        <p class="title">Designer & Programmer</p>
+        <p>Hustle when Ur Life, Rest When U die </p>
+        <p>Akmal.Jasmadi@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="imman.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Muhammad Aliff Imman </h2>
+        <p class="title">Designer & Programmer</p>
+        <p>Hope this application can help people that face the problem</p>
+        <p>immanmuhd@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
